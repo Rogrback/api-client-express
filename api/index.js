@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 // Routes
 require('./app/routes/customer.routes')(app)
 require('./app/routes/product.routes')(app)
+require('./app/routes/sale.routes')(app)
 
 app.listen(3000, () => {
     console.log('Server listening on port 3000')
